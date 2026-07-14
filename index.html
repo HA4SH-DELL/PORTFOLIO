@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harsh Solanki — Backend Engineer | Portfolio</title>
+  <meta name="description" content="Personal Portfolio of Harsh Solanki — B.Tech 3rd Year Student specializing in Backend Engineering, Distributed Systems, APIs, and Database Architecture.">
+  <link rel="stylesheet" href="css/style.css?v=2">
+  <script defer src="js/app.js?v=2"></script>
+</head>
+<body>
+  <!-- Splash Screen Preloader -->
+  <div id="splash-screen" class="splash-screen">
+    <!-- Decorative floating shapes -->
+    <div class="splash-shapes">
+      <div class="splash-shape circle-1"></div>
+      <div class="splash-shape circle-2"></div>
+      <div class="splash-shape plus-1">+</div>
+      <div class="splash-shape plus-2">+</div>
+      <div class="splash-shape line-1"></div>
+    </div>
+    
+    <div class="splash-content">
+      <h1 class="splash-name">
+        <span class="word-harsh">
+          <span class="letter" style="animation-delay: 0.1s">H</span>
+          <span class="letter" style="animation-delay: 0.2s">a</span>
+          <span class="letter" style="animation-delay: 0.3s">r</span>
+          <span class="letter" style="animation-delay: 0.4s">s</span>
+          <span class="letter" style="animation-delay: 0.5s">h</span>
+        </span>
+        <span class="word-solanki">
+          <span class="letter" style="animation-delay: 0.7s">S</span>
+          <span class="letter" style="animation-delay: 0.8s">o</span>
+          <span class="letter" style="animation-delay: 0.9s">l</span>
+          <span class="letter" style="animation-delay: 1.0s">a</span>
+          <span class="letter" style="animation-delay: 1.1s">n</span>
+          <span class="letter" style="animation-delay: 1.2s">k</span>
+          <span class="letter" style="animation-delay: 1.3s">i</span>
+        </span>
+      </h1>
+      <div class="splash-line"></div>
+    </div>
+  </div>
+
+  <!-- Ambient Animated Moving Background -->
+  <div class="ambient-bg-container" aria-hidden="true">
+    <!-- 1. Sweeping Architectural Light Beams -->
+    <div class="ambient-light-beam beam-left"></div>
+    <div class="ambient-light-beam beam-right"></div>
+
+    <!-- 2. Technical Ethereal Orbital Rings -->
+    <div class="ambient-orbit orbit-1"></div>
+    <div class="ambient-orbit orbit-2"></div>
+
+    <!-- 3. Interactive Cursor Torch / Spotlight -->
+    <div id="ambient-spotlight" class="ambient-cursor-spotlight"></div>
+
+    <!-- 4. Aurora Glowing Orbs -->
+    <div class="ambient-orb orb-gold"></div>
+    <div class="ambient-orb orb-emerald"></div>
+    <div class="ambient-orb orb-indigo"></div>
+    <div class="ambient-orb orb-cyan"></div>
+    <div class="ambient-orb orb-purple"></div>
+  </div>
+
+  <!-- Editorial Gold Edge Accent Bar -->
+  <div class="gold-edge-bar" aria-hidden="true"></div>
+
+
+  <!-- Header Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-content">
+      <a href="#about" class="logo-brand">
+        HARSH SOLANKI<span class="logo-dot"></span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link active">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#roadmap" class="nav-link">Roadmap</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="status-pill" title="Available for backend engineering roles">
+          <span class="status-dot"></span>
+          <span>BACKEND ENGINEER · AVAILABLE</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero / About Section -->
+    <section class="hero-section" id="about">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <div class="hero-content reveal-on-scroll">
+            <div class="editorial-section-tag">
+              <span class="editorial-line"></span>
+              <span>── BACKEND PORTFOLIO</span>
+            </div>
+
+            <h1 class="hero-editorial-title">
+              <span class="title-primary">Harsh Solanki</span>
+              <span class="title-italic">Backend Engineer.</span>
+            </h1>
+
+            <p class="hero-bio-text">
+              I am a <strong>3rd Year B.Tech Student</strong> and dedicated <strong>Backend Engineer</strong> specializing in scalable server architecture, distributed microservices, high-concurrency APIs, and optimized database systems. Passionate about writing clean server-side code and solving complex performance bottlenecks.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#projects" class="btn btn-primary">
+                <span>Backend Projects</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </a>
+              <a href="#contact" class="btn btn-editorial-outline">
+                <span>Get In Touch</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Animated & Rich Colored Engineering Profile Card -->
+          <div class="profile-card-animated-wrapper reveal-on-scroll" style="transition-delay: 0.15s;">
+            <div class="hero-visual-card profile-card-animated" id="interactive-profile-card">
+              <div class="spec-sheet-header">
+                <div class="header-left-group">
+                  <span class="status-pulse-dot"></span>
+                  <span class="spec-title">ENGINEER PROFILE // HARSH SOLANKI</span>
+                </div>
+                <span class="spec-badge badge-rich-gold">BACKEND ENGINEER</span>
+              </div>
+
+              <div class="profile-rich-box">
+                <div class="profile-row">
+                  <span class="profile-key key-emerald">NAME</span>
+                  <span class="profile-val">Harsh Solanki</span>
+                </div>
+                <div class="profile-row">
+                  <span class="profile-key key-amber">DEGREE</span>
+                  <span class="profile-val">B.Tech (3rd Year Undergraduate)</span>
+                </div>
+                <div class="profile-row">
+                  <span class="profile-key key-indigo">ROLE</span>
+                  <span class="profile-val">Backend &amp; Systems Engineer</span>
+                </div>
+                <div class="profile-row row-pills">
+                  <span class="profile-key key-purple">STACK</span>
+                  <div class="tech-badges-group">
+                    <span class="tech-badge badge-node">Node.js</span>
+                    <span class="tech-badge badge-go">Golang</span>
+                    <span class="tech-badge badge-react">Python</span>
+                    <span class="tech-badge badge-sql">PostgreSQL</span>
+                    <span class="tech-badge badge-native">Redis</span>
+                  </div>
+                </div>
+                <div class="profile-row">
+                  <span class="profile-key key-rose">FOCUS</span>
+                  <span class="profile-val">High-Concurrency APIs &amp; Databases</span>
+                </div>
+              </div>
+
+              <div class="hero-stats rich-stats">
+                <div class="stat-item stat-animated" data-target="3">
+                  <div class="stat-num rich-num-gold">3rd Yr</div>
+                  <div class="stat-label">B.Tech Standing</div>
+                </div>
+                <div class="stat-item stat-animated">
+                  <div class="stat-num rich-num-indigo">10+</div>
+                  <div class="stat-label">Web &amp; App Projects</div>
+                </div>
+                <div class="stat-item stat-animated">
+                  <div class="stat-num rich-num-emerald">100%</div>
+                  <div class="stat-label">Clean Code Focus</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section-pad" id="projects">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <div>
+            <div class="editorial-section-tag">
+              <span class="editorial-line"></span>
+              <span>BACKEND ENGINEERING</span>
+            </div>
+            <h2 class="section-title-editorial">
+              Featured Backend <span>Systems.</span>
+            </h2>
+          </div>
+
+          <!-- Filter Pills -->
+          <div class="filter-group">
+            <button class="filter-btn active" data-filter="all">All Systems</button>
+            <button class="filter-btn" data-filter="microservices">Microservices</button>
+            <button class="filter-btn" data-filter="distributed">Distributed APIs</button>
+            <button class="filter-btn" data-filter="security">Auth &amp; Security</button>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- Project 1: Microservice -->
+          <article class="project-card reveal-on-scroll" data-category="e-commerce" data-project-id="minima-sneakers">
+            <div class="project-media-wrap">
+              <img src="assets/images/minima-cover.png" alt="MINIMA Premium Footwear Store" class="project-img">
+              <span class="project-badge-top">E-COMMERCE / FULLSTACK</span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta-row">
+                <span class="project-category">REACT &amp; API BACKEND</span>
+                <span style="font-family: var(--font-mono); font-size:0.75rem; color: var(--text-tertiary);">LIVE</span>
+              </div>
+              <h3 class="project-title">MINIMA Premium Footwear</h3>
+              <p class="project-summary">
+                A sleek, modern e-commerce platform for premium sneakers featuring dynamic cart state, responsive product galleries, and a high-performance frontend.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Vite</span>
+                <span class="tech-tag">TailwindCSS</span>
+                <span class="tech-tag">State Management</span>
+              </div>
+              <div class="project-footer">
+                <span class="view-case-btn">
+                  <span>View Details</span>
+                  <span>→</span>
+                </span>
+                <a href="https://ha4sh-dell.github.io/SNEAKER-BRAND/" target="_blank" onclick="event.stopPropagation()" style="font-family: var(--font-mono); font-size: 0.76rem; color: var(--accent-gold); text-decoration: underline; z-index: 5; position: relative;">LIVE DEMO ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Ajwa Restaurant -->
+          <article class="project-card reveal-on-scroll" data-category="frontend" data-project-id="ajwa-restaurant" style="transition-delay: 0.1s;">
+            <div class="project-media-wrap">
+              <img src="assets/images/ajwa-cover.png" alt="AJWA Restaurant Web Experience" class="project-img">
+              <span class="project-badge-top">FRONTEND &amp; UI/UX</span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta-row">
+                <span class="project-category">WEB PLATFORM</span>
+                <span style="font-family: var(--font-mono); font-size:0.75rem; color: var(--text-tertiary);">LIVE</span>
+              </div>
+              <h3 class="project-title">AJWA Restaurant Experience</h3>
+              <p class="project-summary">
+                A visually stunning, fully responsive dining platform featuring elegant menus, booking integration, and high-end aesthetics.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3 / SCSS</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">UI Animations</span>
+              </div>
+              <div class="project-footer">
+                <span class="view-case-btn">
+                  <span>View Details</span>
+                  <span>→</span>
+                </span>
+                <a href="https://ha4sh-dell.github.io/AJWA-RESTAURANT/" target="_blank" onclick="event.stopPropagation()" style="font-family: var(--font-mono); font-size: 0.76rem; color: var(--accent-gold); text-decoration: underline; z-index: 5; position: relative;">LIVE DEMO ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: FlowList -->
+          <article class="project-card reveal-on-scroll" data-category="app" data-project-id="flowlist-app" style="transition-delay: 0.2s;">
+            <div class="project-media-wrap">
+              <img src="assets/images/flowlist-cover.png" alt="FlowList Productivity App" class="project-img">
+              <span class="project-badge-top">WEB APPLICATION</span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta-row">
+                <span class="project-category">REACT WEB APP</span>
+                <span style="font-family: var(--font-mono); font-size:0.75rem; color: var(--text-tertiary);">LIVE</span>
+              </div>
+              <h3 class="project-title">FlowList Productivity App</h3>
+              <p class="project-summary">
+                A seamless, state-driven productivity application designed to manage workflows, tasks, and schedules with blazing fast performance.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-tag">React.js</span>
+                <span class="tech-tag">Cloudflare Pages</span>
+                <span class="tech-tag">State Management</span>
+                <span class="tech-tag">Modern UI</span>
+              </div>
+              <div class="project-footer">
+                <span class="view-case-btn">
+                  <span>View Details</span>
+                  <span>→</span>
+                </span>
+                <a href="https://flowlist-at6.pages.dev" target="_blank" onclick="event.stopPropagation()" style="font-family: var(--font-mono); font-size: 0.76rem; color: var(--accent-gold); text-decoration: underline; z-index: 5; position: relative;">LAUNCH APP ↗</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section-pad" id="skills">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <div>
+            <div class="editorial-section-tag">
+              <span class="editorial-line"></span>
+              <span>TECHNICAL STACK</span>
+            </div>
+            <h2 class="section-title-editorial">
+              Backend <span>Skills &amp; Systems.</span>
+            </h2>
+          </div>
+        </div>
+
+        <div class="skills-matrix">
+          <div class="skill-category-box reveal-on-scroll">
+            <div class="skill-cat-header"><span>01 /</span> <span>CORE BACKEND LANGUAGES &amp; RUNTIMES</span></div>
+            <div class="skill-tags">
+              <span class="skill-pill">Node.js &amp; TypeScript</span>
+              <span class="skill-pill">Golang (Go)</span>
+              <span class="skill-pill">Python</span>
+              <span class="skill-pill">High-Concurrency Programming</span>
+              <span class="skill-pill">Asynchronous I/O</span>
+            </div>
+          </div>
+
+          <div class="skill-category-box reveal-on-scroll" style="transition-delay: 0.1s;">
+            <div class="skill-cat-header"><span>02 /</span> <span>API &amp; DISTRIBUTED ARCHITECTURE</span></div>
+            <div class="skill-tags">
+              <span class="skill-pill">RESTful Microservices</span>
+              <span class="skill-pill">gRPC &amp; Protocol Buffers</span>
+              <span class="skill-pill">WebSockets / Real-Time Events</span>
+              <span class="skill-pill">API Gateway &amp; Rate Limiting</span>
+              <span class="skill-pill">JWT &amp; OAuth 2.0 Security</span>
+            </div>
+          </div>
+
+          <div class="skill-category-box reveal-on-scroll">
+            <div class="skill-cat-header"><span>03 /</span> <span>RELATIONAL &amp; NOSQL DATABASES</span></div>
+            <div class="skill-tags">
+              <span class="skill-pill">PostgreSQL &amp; Query Optimization</span>
+              <span class="skill-pill">Redis Distributed Caching</span>
+              <span class="skill-pill">MongoDB / Document Stores</span>
+              <span class="skill-pill">Database Indexing &amp; Transactions</span>
+            </div>
+          </div>
+
+          <div class="skill-category-box reveal-on-scroll" style="transition-delay: 0.1s;">
+            <div class="skill-cat-header"><span>04 /</span> <span>CLOUD, DEVOPS &amp; LINUX INFRASTRUCTURE</span></div>
+            <div class="skill-tags">
+              <span class="skill-pill">Docker Containerization</span>
+              <span class="skill-pill">Prometheus &amp; Grafana Observability</span>
+              <span class="skill-pill">Linux Shell &amp; Bash Scripting</span>
+              <span class="skill-pill">Git &amp; CI/CD Pipelines</span>
+              <span class="skill-pill">Postman / Automated Testing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Scroll-Following Backend Roadmap Section -->
+    <section class="section-pad roadmap-section" id="roadmap">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <div>
+            <div class="editorial-section-tag">
+              <span class="editorial-line"></span>
+              <span>CAREER &amp; SYSTEM ROADMAP</span>
+            </div>
+            <h2 class="section-title-editorial">
+              Engineering <span>Roadmap.</span>
+            </h2>
+          </div>
+          <div class="roadmap-status-badge">
+            <span class="status-pulse-dot"></span>
+            <span>SCROLL TO ADVANCE BEAM</span>
+          </div>
+        </div>
+
+        <!-- Neon Zig-Zag Scroll Following Roadmap Container -->
+        <div class="roadmap-container roadmap-zigzag-container" id="roadmap-container">
+          <!-- Central Neon Zig-Zag Circuit SVG Overlay -->
+          <svg class="roadmap-zigzag-svg" id="roadmap-zigzag-svg" viewBox="0 0 1000 1200" preserveAspectRatio="none">
+              <!-- Shimmering Water Flow Gradient -->
+              <linearGradient id="waterFlowGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#00f2fe" />
+                <stop offset="35%" stop-color="#4facfe" />
+                <stop offset="70%" stop-color="#00c6ff" />
+                <stop offset="100%" stop-color="#10b981" />
+              </linearGradient>
+
+              <!-- Multi-stop Cyber Neon Linear Gradient -->
+              <linearGradient id="neonZigZagGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#00f2fe" />
+                <stop offset="50%" stop-color="#4facfe" />
+                <stop offset="100%" stop-color="#10b981" />
+              </linearGradient>
+
+              <!-- Ultra Neon Laser Glow Filter -->
+              <filter id="ultraNeonGlow" x="-80%" y="-80%" width="260%" height="260%">
+                <feGaussianBlur stdDeviation="3" result="glowSmall1" />
+                <feGaussianBlur stdDeviation="7" result="glowMedium" />
+                <feGaussianBlur stdDeviation="18" result="glowLarge" />
+                <feMerge>
+                  <feMergeNode in="glowLarge" />
+                  <feMergeNode in="glowMedium" />
+                  <feMergeNode in="glowSmall1" />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
+            </defs>
+
+            <!-- Base translucent water channel -->
+            <path class="zigzag-base-path" id="zigzag-base-path"
+              d="M 500,0 C 450,100 450,200 500,300 S 550,500 500,600 S 450,800 500,900 S 550,1100 500,1200"
+              stroke="rgba(255,255,255,0.12)" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+
+            <!-- Active Scroll-Following Water Column (Smooth Solid Flow) -->
+            <path class="zigzag-neon-path" id="zigzag-neon-path"
+              d="M 500,0 C 450,100 450,200 500,300 S 550,500 500,600 S 450,800 500,900 S 550,1100 500,1200"
+              stroke="url(#neonZigZagGrad)" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+
+          <!-- Vertical straight line for mobile view (hidden on desktop) -->
+          <div class="mobile-roadmap-line" id="mobile-roadmap-line">
+            <div class="mobile-roadmap-line-fill" id="mobile-roadmap-line-fill"></div>
+          </div>
+
+          <!-- Roadmap Milestones in Alternating Zig-Zag Grid -->
+          <div class="roadmap-milestones-list zigzag-list">
+            
+            <!-- 01 Left Side -->
+            <div class="roadmap-milestone zigzag-item zigzag-left reveal-on-scroll" data-milestone="1">
+              <div class="milestone-card">
+                <div class="milestone-header">
+                  <span class="milestone-tag tag-emerald">STAGE 01 // FOUNDATION</span>
+                  <span class="milestone-year">B.TECH YEAR 1 &amp; 2</span>
+                </div>
+                <h3 class="milestone-title">Core Computer Science &amp; Systems Architecture</h3>
+                <p class="milestone-desc">
+                  Mastered low-level data structures, algorithmic complexity (Big-O), Unix memory management, C++/Go fundamentals, and multi-threading primitives.
+                </p>
+                <div class="milestone-pills">
+                  <span>Algorithms</span>
+                  <span>Data Structures</span>
+                  <span>Operating Systems</span>
+                  <span>Unix Shell</span>
+                </div>
+              </div>
+              <div class="milestone-node zigzag-node-left" id="milestone-node-1">01</div>
+            </div>
+
+            <!-- 02 Right Side -->
+            <div class="roadmap-milestone zigzag-item zigzag-right reveal-on-scroll" data-milestone="2">
+              <div class="milestone-node zigzag-node-right" id="milestone-node-2">02</div>
+              <div class="milestone-card">
+                <div class="milestone-header">
+                  <span class="milestone-tag tag-amber">STAGE 02 // DATABASES</span>
+                  <span class="milestone-year">DATABASE INTERNALS</span>
+                </div>
+                <h3 class="milestone-title">Relational &amp; Distributed Database Engineering</h3>
+                <p class="milestone-desc">
+                  Engineered production-grade PostgreSQL relational schemas, B-tree indexing strategies, ACID transactional guarantees, and Redis distributed caching pipelines.
+                </p>
+                <div class="milestone-pills">
+                  <span>PostgreSQL</span>
+                  <span>Redis Read-Through</span>
+                  <span>ACID Transactions</span>
+                  <span>Query Optimization</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 03 Left Side -->
+            <div class="roadmap-milestone zigzag-item zigzag-left reveal-on-scroll" data-milestone="3">
+              <div class="milestone-card">
+                <div class="milestone-header">
+                  <span class="milestone-tag tag-indigo">STAGE 03 // MICROSERVICES</span>
+                  <span class="milestone-year">BACKEND APIS</span>
+                </div>
+                <h3 class="milestone-title">High-Concurrency Microservices &amp; API Gateways</h3>
+                <p class="milestone-desc">
+                  Built high-throughput backend services in Node.js &amp; Golang featuring gRPC communication, sliding-window rate limiters, and asynchronous event streams.
+                </p>
+                <div class="milestone-pills">
+                  <span>Node.js / Express</span>
+                  <span>Golang gRPC</span>
+                  <span>Token Bucket Rate Limit</span>
+                  <span>WebSockets</span>
+                </div>
+              </div>
+              <div class="milestone-node zigzag-node-left" id="milestone-node-3">03</div>
+            </div>
+
+            <!-- 04 Right Side -->
+            <div class="roadmap-milestone zigzag-item zigzag-right reveal-on-scroll" data-milestone="4">
+              <div class="milestone-node zigzag-node-right" id="milestone-node-4">04</div>
+              <div class="milestone-card">
+                <div class="milestone-header">
+                  <span class="milestone-tag tag-purple">STAGE 04 // DEVOPS &amp; SECURITY</span>
+                  <span class="milestone-year">INFRASTRUCTURE</span>
+                </div>
+                <h3 class="milestone-title">Zero-Trust Auth, Observability &amp; Docker DevOps</h3>
+                <p class="milestone-desc">
+                  Production-hardened architectures using RSA asymmetric JWT signing, automated Docker container deployments, and live Prometheus/Grafana telemetry.
+                </p>
+                <div class="milestone-pills">
+                  <span>Docker</span>
+                  <span>Prometheus Metrics</span>
+                  <span>OAuth 2.0 / JWT</span>
+                  <span>CI/CD Automation</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 05 Left Side / Climax -->
+            <div class="roadmap-milestone zigzag-item zigzag-left reveal-on-scroll" data-milestone="5">
+              <div class="milestone-card milestone-card-gold">
+                <div class="milestone-header">
+                  <span class="milestone-tag tag-gold">STAGE 05 // CURRENT FRONTIER</span>
+                  <span class="milestone-year">B.TECH 3RD YEAR · ACTIVE</span>
+                </div>
+                <h3 class="milestone-title">Production Backend Engineering &amp; Industry Impact</h3>
+                <p class="milestone-desc">
+                  Actively building next-generation backend systems and available for impactful software engineering internships &amp; backend engineering roles.
+                </p>
+                <div class="milestone-pills">
+                  <span>Available for Roles</span>
+                  <span>High-Scale Backend</span>
+                  <span>System Design</span>
+                  <span>100% Reliability</span>
+                </div>
+              </div>
+              <div class="milestone-node milestone-current zigzag-node-left" id="milestone-node-5">★</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section-pad" id="education">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <div>
+            <div class="editorial-section-tag">
+              <span class="editorial-line"></span>
+              <span>ACADEMIC BACKGROUND</span>
+            </div>
+            <h2 class="section-title-editorial">
+              Education &amp; <span>Standing.</span>
+            </h2>
+          </div>
+        </div>
+
+        <div class="timeline-list">
+          
+          <div class="timeline-item reveal-on-scroll">
+            <div class="timeline-meta">
+              <span class="timeline-year">CURRENT — 3RD YEAR</span>
+              <h3 class="timeline-role">Bachelor of Technology (B.Tech)</h3>
+              <span class="timeline-org">Computer Science &amp; Engineering</span>
+            </div>
+            <div class="timeline-content">
+              <p>
+                Currently pursuing my 3rd year of B.Tech. Strong focus on backend architecture, distributed systems engineering, high-throughput APIs, and database internals.
+              </p>
+              <div class="timeline-bullets">
+                <span class="skill-pill">Data Structures &amp; Algorithms</span>
+                <span class="skill-pill">Distributed Systems</span>
+                <span class="skill-pill">Database Management Systems</span>
+                <span class="skill-pill">Operating Systems &amp; Concurrency</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section-pad contact-section" id="contact">
+      <div class="container">
+        <div class="contact-box">
+          
+          <div class="reveal-on-scroll">
+            <div class="editorial-section-tag">
+              <span class="editorial-line"></span>
+              <span>LET'S CONNECT</span>
+            </div>
+            <h2 class="section-title-editorial">
+              Get In <span>Touch.</span>
+            </h2>
+            <p class="hero-bio-text" style="margin-top: 1.5rem;">
+              I am open to Backend Engineering internships, distributed systems projects, and system architecture discussions. Feel free to reach out anytime!
+            </p>
+
+            <!-- Click to Copy Email Pill -->
+            <button class="contact-email-pill" id="copy-email-btn" title="Click to copy email">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span id="email-text">harsh.solanki@developer.io</span>
+              <span style="color: var(--accent-gold); font-size: 0.75rem;">[ COPY EMAIL ]</span>
+            </button>
+          </div>
+
+          <!-- Interactive Form -->
+          <div class="reveal-on-scroll" style="transition-delay: 0.15s;">
+            <form id="contact-form" class="hero-visual-card" onsubmit="return false;">
+              <h3 style="font-family: var(--font-serif); font-size: 1.6rem; margin-bottom: 1.5rem;">Send a Message</h3>
+
+              <div class="form-group">
+                <label class="form-label" for="sender-name">Your Name</label>
+                <input type="text" id="sender-name" class="form-input" placeholder="Enter your name" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="sender-email">Email Address</label>
+                <input type="email" id="sender-email" class="form-input" placeholder="you@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="sender-message">Message</label>
+                <textarea id="sender-message" class="form-textarea" rows="4" placeholder="Hi Harsh Solanki, I'd like to connect regarding backend engineering..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <span>Send Message</span>
+                <span>→</span>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Interactive Case Study Modal Drawer -->
+  <div class="modal-overlay" id="case-study-modal" aria-hidden="true" role="dialog">
+    <div class="modal-drawer">
+      <div class="drawer-header">
+        <span class="spec-badge">SYSTEM DETAILS // HARSH SOLANKI</span>
+        <button class="drawer-close-btn" id="close-modal-btn" aria-label="Close Project Details">✕</button>
+      </div>
+
+      <img src="assets/images/project1.jpg" alt="Project Preview" id="drawer-img" class="drawer-cover-img">
+
+      <h3 class="drawer-title" id="drawer-title">High-Concurrency E-Commerce Order Engine</h3>
+      <p class="drawer-subtitle" id="drawer-subtitle">
+        Engineered a scalable backend system built to handle high-volume orders with automated Redis caching and PostgreSQL.
+      </p>
+
+      <div class="drawer-metrics" id="drawer-metrics">
+        <div class="drawer-metric-card">
+          <div style="font-family: var(--font-serif); font-size: 1.8rem; font-weight: 700; color: var(--text-primary);">Clean</div>
+          <div style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-secondary);">ARCHITECTURE</div>
+        </div>
+        <div class="drawer-metric-card">
+          <div style="font-family: var(--font-serif); font-size: 1.8rem; font-weight: 700; color: var(--text-primary);">Fast</div>
+          <div style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-secondary);">API LATENCY</div>
+        </div>
+        <div class="drawer-metric-card">
+          <div style="font-family: var(--font-serif); font-size: 1.8rem; font-weight: 700; color: var(--text-primary);">100%</div>
+          <div style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-secondary);">RESPONSIVE</div>
+        </div>
+      </div>
+
+      <div class="drawer-section">
+        <h4 class="drawer-section-title">01 / PROBLEM STATEMENT</h4>
+        <p style="color: var(--text-secondary); line-height: 1.7; font-size: 0.95rem;" id="drawer-problem">
+          Traditional monolithic backend endpoints suffered from slow response times under heavy user query loads.
+        </p>
+      </div>
+
+      <div class="drawer-section">
+        <h4 class="drawer-section-title">02 / ENGINEERED SOLUTION</h4>
+        <p style="color: var(--text-secondary); line-height: 1.7; font-size: 0.95rem;" id="drawer-solution">
+          Built modular backend controllers with Redis in-memory caching and optimized database queries for fast response times.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toast">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+    <span id="toast-message">Message sent successfully!</span>
+  </div>
+
+  <!-- JavaScript Engine -->
+  <script src="js/app.js"></script>
+</body>
+</html>
