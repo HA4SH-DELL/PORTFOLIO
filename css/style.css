@@ -2377,4 +2377,30 @@ body {
   .section-pad {
     padding: 3rem 0 !important;
   }
+
+  /* 4. Compact Header for Mobile */
+  .site-header {
+    padding: 0.75rem 0 !important;
+  }
+  
+  .site-header.scrolled {
+    padding: 0.5rem 0 !important;
+  }
+
+  .logo-brand {
+    font-size: 1.1rem !important;
+  }
+
+  .nav-links {
+    display: none !important;
+  }
+
+  .status-pill {
+    padding: 0.25rem 0.5rem !important;
+    font-size: 0.6rem !important;
+  }
+  
+  .nav-content {
+    gap: 0.5rem;
+  }
 }
