@@ -476,17 +476,17 @@ body {
 
 /* Hero Editorial Section */
 .hero-section {
-  min-height: 94vh;
+  min-height: 85vh;
   display: flex;
   align-items: center;
-  padding-top: 8rem;
+  padding-top: 6rem;
   position: relative;
 }
 
 .hero-grid {
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
-  gap: 4rem;
+  gap: 2rem;
   align-items: center;
 }
 
@@ -511,10 +511,10 @@ body {
 
 .hero-editorial-title {
   font-family: var(--font-serif);
-  font-size: clamp(3.8rem, 7.2vw, 6.2rem);
-  line-height: 0.98;
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  line-height: 1.05;
   letter-spacing: -0.02em;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .title-primary {
@@ -532,11 +532,11 @@ body {
 }
 
 .hero-bio-text {
-  font-size: 1.14rem;
+  font-size: 1.05rem;
   color: var(--text-secondary);
   max-width: 580px;
-  line-height: 1.8;
-  margin-bottom: 2.75rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
   font-weight: 400;
 }
 
