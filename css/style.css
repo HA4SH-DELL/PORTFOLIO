@@ -2351,4 +2351,21 @@ body {
     width: 100%;
     justify-content: center;
   }
+
+  /* 3. Fix Skills Section on Mobile */
+  .skills-matrix {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+  
+  .skill-category-box {
+    padding: 1.5rem !important;
+  }
+
+  .skill-cat-header {
+    font-size: 0.95rem !important;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
 }
