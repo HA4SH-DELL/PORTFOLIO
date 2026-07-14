@@ -2403,4 +2403,48 @@ body {
   .nav-content {
     gap: 0.5rem;
   }
+
+  /* 5. Roadmap Compression for Mobile */
+  .milestone-card {
+    padding: 1rem 0.85rem !important;
+  }
+  .milestone-title {
+    font-size: 1.2rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+  .milestone-desc {
+    font-size: 0.85rem !important;
+    margin-bottom: 0.75rem !important;
+    line-height: 1.4 !important;
+  }
+  .milestone-pills {
+    gap: 0.4rem !important;
+  }
+  .milestone-pills span {
+    font-size: 0.7rem !important;
+    padding: 0.2rem 0.4rem !important;
+  }
+  .milestone-tag {
+    font-size: 0.65rem !important;
+    padding: 0.15rem 0.4rem !important;
+  }
+  .milestone-year {
+    font-size: 0.75rem !important;
+  }
+  .roadmap-grid {
+    padding-left: 20px !important;
+  }
+  .zigzag-item {
+    padding-left: 15px !important;
+    padding-bottom: 1.5rem !important;
+  }
+  .mobile-roadmap-line {
+    left: 10px !important;
+  }
+  .milestone-node {
+    width: 20px !important;
+    height: 20px !important;
+    font-size: 0.6rem !important;
+    left: -2px !important;
+  }
 }
