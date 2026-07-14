@@ -2306,14 +2306,14 @@ body {
   /* 2. Compact Hero Section so it fits on phone screens */
   .hero-section {
     min-height: auto !important;
-    padding-top: 7rem !important;
-    padding-bottom: 3rem !important;
+    padding-top: 5rem !important;
+    padding-bottom: 2rem !important;
   }
   
   .hero-grid {
     display: flex !important;
     flex-direction: column;
-    gap: 3rem;
+    gap: 1.5rem;
   }
   
   .hero-content {
@@ -2328,15 +2328,15 @@ body {
   }
 
   .hero-editorial-title {
-    font-size: clamp(2.5rem, 12vw, 3.2rem) !important;
-    line-height: 1.15 !important;
-    margin-bottom: 1rem !important;
+    font-size: clamp(2rem, 10vw, 2.8rem) !important;
+    line-height: 1.1 !important;
+    margin-bottom: 0.75rem !important;
   }
 
   .hero-bio-text {
-    font-size: 1.05rem !important;
-    line-height: 1.6;
-    margin-bottom: 2rem !important;
+    font-size: 0.9rem !important;
+    line-height: 1.5;
+    margin-bottom: 1.5rem !important;
     text-align: center;
   }
 
@@ -2355,17 +2355,26 @@ body {
   /* 3. Fix Skills Section on Mobile */
   .skills-matrix {
     grid-template-columns: 1fr !important;
-    gap: 1.5rem !important;
+    gap: 0.75rem !important;
   }
   
   .skill-category-box {
-    padding: 1.5rem !important;
+    padding: 1rem !important;
   }
 
   .skill-cat-header {
-    font-size: 0.95rem !important;
+    font-size: 0.85rem !important;
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
+  }
+
+  .skill-pill {
+    font-size: 0.75rem !important;
+    padding: 0.35rem 0.7rem !important;
+  }
+  
+  .section-pad {
+    padding: 3rem 0 !important;
   }
 }
