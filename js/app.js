@@ -38,6 +38,8 @@ document.addEventListener('DOMContentLoaded', () => {
    1. Interactive Background Cursor Torch / Spotlight
    ========================================================================= */
 function initBackgroundSpotlight() {
+  if (window.innerWidth < 768) return; // Disable on mobile to fix lag
+
   const spotlight = document.getElementById('ambient-spotlight');
   if (!spotlight) return;
 
@@ -610,6 +612,8 @@ function initParallaxDepthScrolling() {
    13. Premium Animation: Advanced Magnetic Pull Nodes
    ========================================================================= */
 function initAdvancedMagneticNodes() {
+  if (window.innerWidth < 768) return; // Disable on mobile to fix lag
+  
   const magneticElements = document.querySelectorAll('.milestone-node, .magnetic-btn');
   
   magneticElements.forEach(el => {
@@ -646,8 +650,9 @@ function createSplashParticles() {
   if (!container) return;
 
   const characters = ['+', 'x', '// SYS', '{ }', '< />', '0x1A4', 'null'];
+  const particleCount = window.innerWidth < 768 ? 10 : 40;
   
-  for (let i = 0; i < 40; i++) {
+  for (let i = 0; i < particleCount; i++) {
     const el = document.createElement('div');
     el.classList.add('splash-shape');
     
